@@ -35,6 +35,10 @@ public class Main {
 
 
         System.out.println(carData.getVIN());
+        System.out.println(carData.getOdometer());
+        System.out.println(carData.getGasConsumption());
+        System.out.println(carData.getOilChangeMileage());
+        System.out.println(carData.getEngineSize());
 
         TelematicsService serviceCall = new TelematicsService();
 
