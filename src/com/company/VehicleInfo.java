@@ -54,12 +54,48 @@ public class VehicleInfo {
 
     }
 
+    @Override
+    public String toString() {
+
+        return (" VIN: " + getVIN() + " Odometer: " + getOdometer() + " LastOilChange: " + getOilChangeMileage() + " Engine: " + getEngineSize());
+    }
+
     public void setOilChangeMileage(double oilChangeMileage) {
         this.oilChangeMileage = oilChangeMileage;
     }
 
 
+
+        public static final String HTMLText= "<html>"
+    + "<title>Vehicle Telematics Dashboard</title>"
+    + "<body>"
+    + "<h1 align=\"center\">Averages for # vehicles</h1>"
+    + "<table align=\"center\">"
+    + "<tr>"
+    + "<th>Odometer (miles) |</th><th>Consumption (gallons) |</th><th>Last Oil Change |</th><th>Engine Size (liters)</th>"
+    + "</tr>"
+    + "<tr>"
+        + "<td align=\"center\">#1</td><td align=\"center\">#2</td><td align=\"center\">#3</td align=\"center\"><td align=\"center\">#4</td>"
+    + "</tr>"
+    + "</table>"
+    + "<h1 align=\"center\">History</h1>"
+    + "<table align=\"center\" border=\"1\">"
+    + "<tr>"
+        + "<th>VIN</th><th>Odometer (miles)</th><th>Consumption (gallons)</th><th>Last Oil Change</th><th>Engine Size (liters)</th>"
+    + "</tr>";
+
+    public static final String HTMLData =  "<tr>"
+       + "<td align=\"center\">#5</td><td align=\"center\">#6</td><td align=\"center\">#7</td><td align=\"center\">#8</td align=\"center\"><td align=\"center\">#9</td>"
+            + "</tr>";
+
+    public static final String HTMLClose =
+    "</table>"
+    + "</body>"
+    + "</html>";
+
+
 }
+
 
 
 
